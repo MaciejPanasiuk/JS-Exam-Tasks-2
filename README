@@ -1,0 +1,24 @@
+2 solved Javascript Exam tasks for JavaScript Developer Postgraduate studies.
+Task:
+1. [EXAM] Create a bouncy simulator. Get board from ExampleInput.js. 
+
+Y – when bouncing ball gets in collision with it, redirect the ball to a random direction, other that it came from. After that Y turns into 0 
+
+X – border, 
+
+0 – fields, that the ball can travel through, 
+
+1 – bouncing ball
+
+ 
+
+The program should show how the ball travels and bounces against the walls. Bouncing objects starts in any corner. Assume that 1 and Y positions may vary. 
+
+
+2. [EXAM] Implement:  https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
+
+Both Applications were created in React using Vite with basic UI.
+To run each application go to the task directory using terminal/powershell:
+"cd Bouncing-Ball" or cd "Game-of-Life"
+installing all libraries located in package.json using "npm Install"
+and run the application in the browser with "npm run dev" command

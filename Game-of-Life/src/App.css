@@ -1,0 +1,23 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.tile{
+  width:20px;
+  height:20px;
+  border:solid 1px black;
+  background-color:rgb(127, 229, 255);
+}
+.alive{
+  background-color:blueviolet
+}
+.tileset{
+  border:solid 10px black
+}
+.Options{
+  margin-bottom: 30px;
+  display:flex;
+  gap:10px;
+  place-content: end center;
+} 
