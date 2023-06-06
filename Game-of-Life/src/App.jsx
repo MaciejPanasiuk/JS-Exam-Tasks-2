@@ -1,8 +1,8 @@
 import { useCallback, useEffect, useState, useRef } from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
-import NEIGHBOURS from "./Common/const";
-import createEmptyTileset from "./Common/functions";
+import NEIGHBOURS from "./const/const";
+import createEmptyTileset from "./functions/functions";
 import "./App.css";
 
 function App() {

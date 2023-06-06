@@ -14,11 +14,32 @@ X – border,
 
 The program should show how the ball travels and bounces against the walls. Bouncing objects starts in any corner. Assume that 1 and Y positions may vary. 
 
+ExampleInput.js as below: const INPUTBOARD = [
+  ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '1', '0', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', '0', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', 'X', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', '0', 'X', 'X', 'X', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', '0', 'X', '0', '0', '0', '0', 'Y', '0', 'X'],
+  ['X', '0', '0', 'X', 'X', 'X', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', '0', 'X', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', 'Y', '0', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', '0', '0', '0', '0', '0', '0', '0', '0', '0', '0', 'X'],
+  ['X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X', 'X'],
+];
+
+export default INPUTBOARD;
 
 2. [EXAM] Implement:  https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life
 
 Both Applications were created in React using Vite with basic UI.
-To run each application go to the task directory using terminal/powershell:
-"cd Bouncing-Ball" or cd "Game-of-Life"
-installing all libraries located in package.json using "npm Install"
-and run the application in the browser with "npm run dev" command
+To run each application follow terminal/powershell commands as below:
+
+"cd Bouncing-Ball" or "cd Game-of-Life"
+"npm Install"
+"npm run dev"
