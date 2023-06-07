@@ -20,7 +20,8 @@ function App() {
   }, [numOfRows, numOfCols]);
 
   useEffect(() => {
-    setTimeout(runGeneration, 200);
+    const timer=setTimeout(runGeneration, 200);
+    return () => clearTimeout(timer);
   }, [isRunning, tileset]);
 
   const runGeneration = useCallback(() => { // optymalizacja rerenderingu przy wielokrotnych zmianach stanu
