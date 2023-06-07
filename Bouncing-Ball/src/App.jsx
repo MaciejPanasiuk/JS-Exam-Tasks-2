@@ -1,20 +1,20 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import INPUTBOARD from "./const/ExamInput.js";
-import handleDirections from "./functions/handleDirections.js";
-import handlePositions from "./functions/handlePositions.js";
-import handleMovement from "./functions/handleMovement.js";
+import DirectionsHandler from "./functions/DirectionsHandler.js";
+import PositionsHandler from "./functions/PositionsHandler.js";
+import MovementHandler from "./functions/MovementHandler.js";
 import Button from "@mui/material/Button";
 
 import "./App.css";
 const { setDirection, getRandomDirection, changeDirOnWallHit } =
-  handleDirections;
+DirectionsHandler;
 const {
   getInitialBallPosition,
   getCurrentBallPosition,
   getNeighboursPositions,
   getPortalPosition,
-} = handlePositions;
-const { updateBoardOnMove, updateBoardOnPortalEnter } = handleMovement;
+} = PositionsHandler;
+const { updateBoardOnMove, updateBoardOnPortalEnter } = MovementHandler;
 
 function App() {
 
@@ -42,7 +42,7 @@ function App() {
   }, [wallHitTrigger]);
 
   useEffect(() => {
-    const timer = setTimeout(runGame, 100);
+    const timer = setTimeout(runGame, 150);
     return () => clearTimeout(timer);
   }, [isRunning, ballPosition, currentDirection]);
 
